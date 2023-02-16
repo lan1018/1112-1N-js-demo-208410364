@@ -39,3 +39,16 @@ function add() {
 }
 
 addBtn.addEventListener('click', add);
+
+
+// operand1 operator operand2  0 - 5
+function subtract() {
+    const operand1 = currentResult;
+    const operand2 = getUserInput();
+    currentResult = operand1 - operand2;
+    console.log(`${operand1} - ${operand2} = ${currentResult}`);
+    const caltext = `${operand1} - ${operand2}`;
+    outputResult(currentResult, caltext); 
+}
+
+subtractBtn.addEventListener('click', subtract);

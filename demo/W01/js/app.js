@@ -1,7 +1,7 @@
 const userInput = document.querySelector('#input-number');
 const addBtn = document.querySelector('#btn-add');
 const subtractBtn = document.querySelector('#btn-subtract');
-const multiplyBtn = document.querySelector('#btn-miltiply');
+const multiplyBtn = document.querySelector('#btn-multiply');
 const divideBtn = document.querySelector('#btn-divide');
 
 const currentCalculationOutput = document.querySelector('#current-calculation')
@@ -52,3 +52,29 @@ function subtract() {
 }
 
 subtractBtn.addEventListener('click', subtract);
+
+
+// operand1 operator operand2  0 * 5
+function multiply() {
+    const operand1 = currentResult;
+    const operand2 = getUserInput();
+    currentResult = operand1 * operand2;
+    console.log(`${operand1} * ${operand2} = ${currentResult}`);
+    const caltext = `${operand1} * ${operand2}`;
+    outputResult(currentResult, caltext); 
+}
+
+multiplyBtn.addEventListener('click', multiply);
+
+
+// operand1 operator operand2  0 / 5
+function divide() {
+    const operand1 = currentResult;
+    const operand2 = getUserInput();
+    currentResult = operand1 / operand2;
+    console.log(`${operand1} / ${operand2} = ${currentResult}`);
+    const caltext = `${operand1} / ${operand2}`;
+    outputResult(currentResult, caltext); 
+}
+
+divideBtn.addEventListener('click', divide);

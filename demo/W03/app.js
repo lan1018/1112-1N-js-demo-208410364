@@ -1,6 +1,13 @@
 // local reviews data
 const reviews = [
   {
+    id: 0,
+    name: 'Frankie Lan',
+    job: 'student',
+    img: 'https://casmvaldsmrrajnyisdj.supabase.co/storage/v1/object/public/demo-64/md_1N_img/me.png',
+    text: "learning how to design web page.",
+  },
+  {
     id: 1,
     name: 'susan smith',
     job: 'web developer',

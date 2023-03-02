@@ -67,3 +67,12 @@ nextBtn.addEventListener('click', () => {
   // console.log('currentItem', reviews[currentItem]);
   showwReview(currentItem);
 });
+
+prevBtn.addEventListener('click', () => {
+  currentItem--;
+  if(currentItem <= reviews.length ) {
+    currentItem < 0;
+  }
+  // console.log('currentItem', reviews[currentItem]);
+  showwReview(currentItem);
+});

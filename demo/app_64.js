@@ -29,7 +29,7 @@ const menu = [
     {
         id: 4,
         title: 'buttermilk pancakes',
-        category: 'breackfast',
+        category: 'dessert',
         price: 15.99,
         img: '../images/item-1.jpeg',
         remote_img: '',
@@ -56,7 +56,8 @@ const menu = [
 ];
 
 const sectionCenter = document.querySelector('.section-center');
-const btnContainer = document.querySelector('btn-container');
+const btnContainer = document.querySelector('.btn-container');
+
 
 const displayMenuItems = (menu) => {
     let displayMenu = menu.map((item) => {
@@ -75,12 +76,28 @@ const displayMenuItems = (menu) => {
       </article>
       `
     });
-    console.log('displayMenu before join', displayMenu);
+    // console.log('displayMenu before join', displayMenu);
     displayMenu = displayMenu.join('');
-    console.log('displayMenu after join', displayMenu);
+    // console.log('displayMenu after join', displayMenu);
     sectionCenter.innerHTML = displayMenu;
 }
 
+const categories = ['all', 'breakfast', 'lunch', 'dinner', 'dessert', 'shakes'];
+// const categories = ['all', ...new Set(menu.map((item) => item.category))];
+
+const displayMenuButtons = () => {
+  let menuButtons = categories.map(category => {
+    return `<button type="button" class="filter-btn" data-id=${category}>${category}</button>`;
+  })
+  console.log('displayButtons before join', menuButtons);
+  menuButtons = menuButtons.join('');
+  console.log('displayButtons after join/n', menuButtons);
+  btnContainer.innerHTML = menuButtons;
+}
+
+
 window.addEventListener('DOMContentLoaded', () => {
     displayMenuItems(menu);
+    displayMenuButtons();
 });
+

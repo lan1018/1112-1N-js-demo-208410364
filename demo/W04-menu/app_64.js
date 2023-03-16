@@ -4,7 +4,7 @@ const menu = [
         title: 'egg',
         category: 'breackfast',
         price: 6.56,
-        img: '../images/my-1.jpg',
+        img: './images/my-1.jpg',
         remote_img: '',
         desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo minima asperiores! Neque iste, accusantium inventore doloribus minus voluptatibus reprehenderit qui rem veniam soluta aspernatur magnam obcaecati! Sit, error laudantium.'
     },
@@ -13,7 +13,7 @@ const menu = [
         title: 'green eating',
         category: 'lunch',
         price: 15.55,
-        img: '../images/my-2.jpg',
+        img: './images/my-2.jpg',
         remote_img: '',
         desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo minima asperiores! Neque iste, accusantium inventore doloribus minus voluptatibus reprehenderit qui rem veniam soluta aspernatur magnam obcaecati! Sit, error laudantium.'
     },
@@ -22,7 +22,7 @@ const menu = [
         title: 'meat balls with noodles',
         category: 'dinner',
         price: 27.89,
-        img: '../images/my-3.jpg',
+        img: './images/my-3.jpg',
         remote_img: '',
         desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo minima asperiores! Neque iste, accusantium inventore doloribus minus voluptatibus reprehenderit qui rem veniam soluta aspernatur magnam obcaecati! Sit, error laudantium.'
     },
@@ -31,7 +31,7 @@ const menu = [
         title: 'buttermilk pancakes',
         category: 'dessert',
         price: 15.99,
-        img: '../images/item-1.jpeg',
+        img: './images/item-1.jpeg',
         remote_img: '',
         desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo minima asperiores! Neque iste, accusantium inventore doloribus minus voluptatibus reprehenderit qui rem veniam soluta aspernatur magnam obcaecati! Sit, error laudantium.'
     },
@@ -40,7 +40,7 @@ const menu = [
         title: 'dinner double',
         category: 'dinner',
         price: 13.99,
-        img: '../images/item-2.jpeg',
+        img: './images/item-2.jpeg',
         remote_img: '',
         desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo minima asperiores! Neque iste, accusantium inventore doloribus minus voluptatibus reprehenderit qui rem veniam soluta aspernatur magnam obcaecati! Sit, error laudantium.'
     },
@@ -49,7 +49,7 @@ const menu = [
         title: 'gozilla milkshake',
         category: 'shakes',
         price: 6.99,
-        img: '../images/item-3.jpeg',
+        img: './images/item-3.jpeg',
         remote_img: '',
         desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo minima asperiores! Neque iste, accusantium inventore doloribus minus voluptatibus reprehenderit qui rem veniam soluta aspernatur magnam obcaecati! Sit, error laudantium.'
     }

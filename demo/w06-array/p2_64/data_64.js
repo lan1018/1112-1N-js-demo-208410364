@@ -1,4 +1,4 @@
-const students = [
+export const students = [
     {
         id: 1,
         name: 'Peter',
@@ -25,3 +25,5 @@ const students = [
         score: 20
     }
 ];
+
+export const sdata = [80, 75, 100, 45, 20];

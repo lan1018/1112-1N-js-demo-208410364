@@ -9,7 +9,6 @@ console.log("sdata sorted", sdata);
 console.log(`The hightest score: ${sdata[0]}`);
 console.log(`The lowest score: ${sdata[sdata.length-1]}`);
 
-
 // for students
 
 console.log("students", students);
@@ -28,5 +27,17 @@ console.log(`The lowest score: ${students2[0].score}`);
 console.log(`The hightest score: ${students2[students2.length-1].score}`);
 
 
+console.log("students", students);
+const averageStudents = students.reduce( (total, student, index) => {
+    console.log("index total", index, total);
+    return total + student.score;
+}, 0) / students.length;
+console.log("Students average", averageStudents);
 
 
+console.log("sdata sorted", sdata);
+const sdataAverage = students.reduce( (total, student, index) => {
+    console.log("index total", index, total);
+    return total + student.score;
+}, 0) / students.length;
+console.log("Sdata average",sdataAverage);

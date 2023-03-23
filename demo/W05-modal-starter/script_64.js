@@ -8,8 +8,8 @@ const btnsOpenModal = document.querySelectorAll('.show-modal');
 
 const openModal = (e) => {
     const modalId = e.target.getAttribute('data-modal-id');
-    const modal = document.getElementById(modalId);
-    modal.classList.remove('hidden');
+    const modals = document.getElementById(modalId);
+    modals.classList.remove('hidden');
     overlay.classList.remove('hidden');
 };
 

@@ -3,8 +3,8 @@ const overlay = document.querySelector('.overlay');
 
 const btnCloseModal = document.querySelector('.close-modal');
 const btnsOpenModal = document.querySelectorAll('.show-modal');
-// console.log('modal', modals);
-// console.log('show-modal', btnsOpenModal);
+console.log('modal', modals);
+console.log('show-modal', btnsOpenModal);
 
 const openModal = (e) => {
     const modalId = e.target.getAttribute('data-modal-id');

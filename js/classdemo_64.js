@@ -54,7 +54,7 @@ const showClassDemo = (week) => {
             break;
         // w6
         case "w6":
-            showDemo.innerHTML = `<iframe src='./demo/W06-array/p3_64/p3_64.html' width="100%" height="100%" />`;
+            showDemo.innerHTML = `<iframe src='./demo/w06-array/p3_64/p3_64.html' width="100%" height="100%" />`;
             break;
         case "w6-md":
             showDemo.innerHTML = `<iframe src='./demo/md/w06/w06_64.html' width="100%" height="100%" />`;

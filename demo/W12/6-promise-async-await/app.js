@@ -1,3 +1,5 @@
+// callbacks, promise, async/await
+// What if no resolve, one is rejected
 const heading1 = document.querySelector('.one');
 const heading2 = document.querySelector('.two');
 const heading3 = document.querySelector('.three');
@@ -5,22 +7,22 @@ const heading4 = document.querySelector('.four');
 
 const btn = document.querySelector('.btn');
 
-btn.addEventListener('click', () => {
-  addColor(1000, heading1, 'red')
-    .then(() => 
-      // console.log('heading2');
-      addColor(2000, heading2, 'green')
-    )
-    .then(() => 
-      //console.log('heading3');
-      addColor(1000, heading3, 'blue')
-    )
-    .then(() => 
-      //console.log('heading4');
-      addColor(500, heading4, 'pink')
-    )
-  .catch((error) => console.log(error))
+btn.addEventListener('click', async () => {
+  const result = await disPlayColor();
+  console.log('result', result);
 });
+
+const disPlayColor = async () => {
+  try {
+    await addColor(1000, heading1, 'red');
+    await addColor(2000, heading2, 'green');
+    await addColor(1000, heading3, 'blue');
+    await addColor(500, heading4, 'pink');
+    console.log('success');
+  } catch(error) {
+    console.log(error);
+  }
+}
 
 function addColor (time, element, color)  {
   return new Promise((resolve, reject) => {

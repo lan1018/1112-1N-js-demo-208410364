@@ -62,7 +62,7 @@ const displayMenuButtons = () => {
       }
     });
   });
-}
+};
 
 const fetchData = async () => {
   try{
@@ -73,7 +73,7 @@ const fetchData = async () => {
 } catch(error){
     console.log(error);
 }
-}
+};
 
 window.addEventListener('DOMContentLoaded', async () => {
   menu = await fetchData();

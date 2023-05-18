@@ -6,7 +6,7 @@
     "price": 15.59,
     "local_img": "./menu/images/item-1.jpeg",
     "remote_img": "https://casmvaldsmrrajnyisdj.supabase.co/storage/v1/object/public/demo-64/menu_64/item-1.jpeg",
-    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam."
+    "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam"
   },
   {
     "id": 2,

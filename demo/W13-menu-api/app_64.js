@@ -69,7 +69,7 @@ const fetchData = async () => {
     const response = await fetch(url, {
       method: 'GET',
       headers: {
-        apiKey: `${supabase_key}`,
+        apiKey: supabase_key,
         Authorization: `Bearer ${supabase_key}` 
       }
     });

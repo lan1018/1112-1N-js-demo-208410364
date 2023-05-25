@@ -1,5 +1,6 @@
-const url = `https://course-api.com/javascript-store-products`;
+// const url = `https://course-api.com/javascript-store-products`;
 
+const url = './api/products.json';
 
 const pContainer = document.querySelector('.products-container')
 
@@ -18,12 +19,13 @@ const fetchData = async () => {
 }
 
 const displayProducts = (products) => {
-    let displayContent = products.map( (product) => {
-        const {company, name, price, image } = product.fields;
+    let displayContent = products.map( (product, index) => {
+        const {company, name, price } = product.fields;
+        let image = `./images/product-${index+1}.jpg`;
         return `
         <div class="single-product">
             <img
-              src=${image[0].url}
+              src=${image}
               class="single-product-img img"
               alt=${name}
             />
@@ -35,7 +37,8 @@ const displayProducts = (products) => {
           `
     }).join('');
 
-    console.log('displayContent',)
+    console.log('displayContent',displayContent);
+    pContainer.innerHTML = displayContent;
 }
 
 window.addEventListener('DOMContentLoaded', async () => {

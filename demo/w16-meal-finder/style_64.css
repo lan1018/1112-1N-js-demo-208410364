@@ -81,10 +81,39 @@ input[type='text'] {
     justify-content: center;
     align-items: center;
     opacity: 0;
+    transition: opacity 0.2s ease-in;
 }
 
 .meal:hover .meal-info{
     opacity: 1;
+}
+
+.single-meal {
+    margin: 30px auto;
+    width: 70%;
+}
+
+.single-meal img {
+    width: 300px;
+    border: 4px #fff solid;
+    border-radius: 2px;
+}
+
+.single-meal ul {
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+.single-meal ul li {
+    background-color: #fff;
+    color: #2d2013;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 5px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 @media (max-width: 800px) {

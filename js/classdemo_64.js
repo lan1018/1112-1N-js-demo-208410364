@@ -94,5 +94,8 @@ const showClassDemo = (week) => {
         case "api":
             showDemo.innerHTML = `<iframe src='./demo/API-meal-finder/index.html' width="100%" height="100%" />`;
             break;
+        case "exp":
+            showDemo.innerHTML = `<iframe src='./demo/md/api_pj/exp_64.html' width="100%" height="100%" />`;
+            break;
     }
 }

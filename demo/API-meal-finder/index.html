@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My API Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style_64.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <h2 class="title">Find Meals For Your Ingredients</h2>
+        <h3>208410364 -- 藍冠勛</h3>
+
+        <div class="meal-search-box">
+          <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <button class="filter-btn" data-filter="Beef">Beef</button>
+      <button class="filter-btn" data-filter="Chicken">Chicken</button>
+      <button class="filter-btn" data-filter="Dessert">Dessert</button>
+
+      <div class="meal-result">
+        <h3 class="title">Here Is Your Search Results:</h3>
+        <div id="meal">
+          <!-- meal item -->
+          <!-- <div class = "meal-item">
+              <div class = "meal-img">
+                <img src = "food.jpg" alt = "food">
+              </div>
+              <div class = "meal-name">
+                <h3>Potato Chips</h3>
+                <a href = "#" class = "recipe-btn">Get Recipe</a>
+              </div>
+            </div> -->
+          <!-- end of meal item -->
+        </div>
+      </div>
+
+
+      <div class="meal-details">
+        <!-- recipe close btn -->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="meal-details-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script_64.js"></script>
+</body>
+
+</html>

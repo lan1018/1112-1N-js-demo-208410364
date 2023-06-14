@@ -17,6 +17,8 @@ body{
 	max-width: 1200px;
 	margin:auto;
 }
+
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
@@ -38,7 +40,7 @@ a{
 	width: 100%;
 	position: relative;
 	z-index: 99;
-	padding:15px;
+	padding:5px;
 }
 .header .item-left{
 	flex:0 0 17%;

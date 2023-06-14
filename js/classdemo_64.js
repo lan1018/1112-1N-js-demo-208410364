@@ -87,5 +87,12 @@ const showClassDemo = (week) => {
         case "w15":
             showDemo.innerHTML = `<iframe src='./demo/W15-store-product/index.html' width="100%" height="100%" />`;
             break;
+        // w9
+        case "api-md":
+            showDemo.innerHTML = `<iframe src='./demo/md/api_pj/pj_64.md' width="100%" height="100%" />`;
+            break;
+        case "api":
+            showDemo.innerHTML = `<iframe src='./demo/API-meal-finder/index.html' width="100%" height="100%" />`;
+            break;
     }
 }
